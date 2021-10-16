@@ -23,7 +23,7 @@
   -> Authentication
   -> Welcome
   -> Notification
-  -> Chat
+  -> chat
   -> Cart
   -> Checkout
 
@@ -2647,7 +2647,7 @@ header .header-menu-trigger:focus {
 	padding: 15px 15px 40px 15px;
 }
 
-/*Chat List*/
+/*chat List*/
 
 .chat-list {
 	margin: 0;
@@ -2701,7 +2701,7 @@ header .header-menu-trigger:focus {
 	border-color: transparent transparent transparent #ffffff;
 }
 
-/*Chat*/
+/*chat*/
 
 .chat .head {
 	position: relative;
@@ -2799,7 +2799,7 @@ header .header-menu-trigger:focus {
 	line-height: 22px;
 }
 
-/*Chat Submission*/
+/*chat Submission*/
 
 .chat-submission {
 	position: fixed;
