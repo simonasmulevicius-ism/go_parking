@@ -208,6 +208,27 @@
                     <div class="col-12">
                         <h4 class="grand-total-title">Plate number <span>GRB 494</span></h4>
                         <a href="checkout.html">Report</a>
+
+                        <form action="/upload" method="POST" id="form-id" enctype="multipart/form-data">
+                            <!-- <button id="your-id-button">Report2</button> -->
+                            <input type="hidden" id="my_hidden" name="my_hidden" value="my_hidden">
+                            <input type="submit" id="your-id-button" value="Report">
+                        </form>
+                        
+                        
+                        <form method="post" enctype="multipart/form-data" action="/upload">
+                            <input type="file" name="file">
+                            <input type="submit" value="Submit">
+                        </form>
+
+                        <script>
+                            var form = document.getElementById("form-id");
+
+                            document.getElementById('your-id-button').onclick = function() {
+                                document.getElementById('my_hidden').value = canvas.toDataURL('image/png');
+                                document.forms["form-id"].submit();
+                            };
+                        </script>
                     </div>
                 </div>
             </div>
@@ -227,7 +248,7 @@
                 <a href="chat.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="assets/img/icons/chat.svg" class="injectable" alt="">
-                        <span>chat</span>
+                        <span>Help</span>
                     </div>
                 </a>
                 <a  id="startbutton" class="footer-nav-single_camera">
@@ -239,7 +260,7 @@
                 <a href="cart.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="assets/img/icons/cart.svg" class="injectable" alt="">
-                        <span>Cart</span>
+                        <span>Rewards</span>
                     </div>
                 </a>
                 <a href="profile.html" class="footer-nav-single">
